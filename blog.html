@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/print.css" media="print" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/mFavicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sitio">
+    <meta name="twitter:title" content="Título página">
+    <meta name="twitter:description" content="Descripción de la página">
+    <meta name="twitter:creator" content="@autor">
+    <meta name="twitter:image" content="http://www.ejemplo.com/image.jpg">
+
+    <!-- Open Graph data color: #BE1823;-->
+    <meta property="og:title" content="Título de la página" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.ejemplo.com/" />
+    <meta property="og:image" content="http://ejemplo.com/imagen.jpg" />
+    <meta property="og:description" content="Descripción de la página" />
+    <meta property="og:site_name" content="Nombre página web" />
+    <meta property="fb:admins" content="ID de Facebook" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="./assets/js/canvas.js"></script>
+    <script src="./assets/js/canvasJuego.js"></script>
+    <script src="./assets/js/controlesVideo.js"></script>
+    <script src="./assets/js/controlesAudio.js"></script>
+    <script src="./assets/js/contenidoInteracticoJq.js"></script>
+
+    <title>Blog - Nombre Empresa</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="desktop">
+                <div class="logo">
+                    <a href="./index.html" tittle ="Enlace a inicio"><img src="./assets/img/logoBlack.png" alt="logo empresa"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html" tittle ="Enlace a inicio">Inicio</a></li>
+                    <li><a href="blog.html" tittle ="Enlace a blog">Blog</a></li>
+                    <li><a href="servicios.html" tittle ="Enlace a servicios">Servicios</a></li>
+                    <li><a href="contacto.html" tittle ="Enlace a contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="blogSection">
+            <h1>BLOG</h1>
+            <article>
+                <a id="animate"></a>
+                <h2>Animaciones mediante el método animate</h2>
+                <div class="botoneraEfectos">
+                        <button id="bA">derecha</button> 
+                        <button id="bB">abajo</button>
+                        <button id="bC">más grande</button>
+                        <button id="bD">más pequeño</button>
+                        <button id="bE">más opacidad</button>
+                        <button id="bF">menos opacidad</button>
+                </div>  
+                <div class="contenedorCajas">
+                    <div class="caja cajaB"></div>
+                </div>
+            </article>
+            <article>
+                <a id="EfectosJq"></a>
+                <h2>Efectos mediante JQuerys</h2>
+                <div class="botoneraEfectos">
+                    <button id="b1">slideUp</button> 
+                    <button id="b2">slideDown</button>
+                    <button id="b3">slideToggle</button>
+                    <button id="b4">fadeOut</button>
+                    <button id="b5">bind</button>
+                    <button id="b6">delay</button>
+                    <button id="b7">toggleClass</button>
+                </div>  
+                <div class="contenedorCajas">
+                    <div class="caja cajaA"></div>
+                </div>
+            </article>
+            <article>
+                <a id="eventosEfectosJq"></a>
+                <h2>Eventos y efectos mediante JQuerys</h2>
+                <div class="contenedorCajas">
+                    <div class="caja caja1">click</div>
+                    <div class="caja caja2">dblclick</div>
+                    <div class="caja caja3">mouseenter</div>
+                    <div class="caja caja4">mouseleave</div>
+                    <div class="caja caja5">hover</div>
+                    <div class="caja caja6">mousedown</div>
+                    <div class="caja caja7">mouseup</div>
+                </div>
+            </article>
+            <article>
+                <a id="juegoCanvas"></a>
+                <h2>Juego básico con Canvas</h2>
+                <div>
+                    <canvas id="lienzo" width="700" height="400"> 
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    <br><br><br>
+                    <p>
+                        Pulsar las teclas &larr; &uarr; &rarr; &darr; para mover o cambiar de dirección<br>
+                        Pulsar la tecla P para pausar el movimiento
+                    </p>
+                </div>
+            </article>
+            <article>
+                <a id="dibujoCanvas"></a>
+                <h2>Dibujo Canvas</h2>
+                <div>
+                    <canvas id="lienzoCanvas" width="500" height="500"> 
+                        El navegador no soporta canvas 
+                    </canvas>
+                </div>
+            </article>
+            <article>
+                <a id="Animacion"></a>
+                <h2>Animaciones</h2>
+                <div class="contenedorAnimacion">
+                    <img class="logoAnimacion" src="./assets/img/logoTeal.png" alt="Logo M">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, temporibus eveniet quia, ratione laborum eligendi odit, aperiam tempore optio asperiores quod nobis. Consectetur aliquam fugit qui nobis aut sint veritatis.</p>
+                </div>
+            </article>
+            <article>
+                <a id="controlAudio"></a>
+                <h2>Control de audio</h2>
+                <div id="audios">
+                    <audio id="medioAudio1" controls>
+                        <source src="./assets/audio/audio1.mp3" type='audio/mpeg; codecs="mp3"'>
+                        <source src="./assets/audio/audio1.ogg" type='audio/ogg; codecs="vorbis"' >
+                    </audio>
+                    <audio id="medioAudio2" controls>
+                        <source src="./assets/audio/audio2.mp3" type='audio/mpeg; codecs="mp3"'>
+                        <source src="./assets/audio/audio2.ogg" type='audio/ogg; codecs="vorbis"' >
+                    </audio>
+                    <audio id="medioAudio3" controls>
+                        <source src="./assets/audio/audio3.mp3" type='audio/mpeg; codecs="mp3"'>
+                        <source src="./assets/audio/audio3.ogg" type='audio/ogg; codecs="vorbis"' >
+                    </audio>
+                    <audio id="medioAudio4" controls>
+                            <source src="./assets/audio/lionRoar.mp3" type='audio/mpeg; codecs="mp3"'>
+                            <source src="./assets/audio/lionRoar.ogg" type='audio/ogg; codecs="vorbis"' >
+                    </audio>
+                </div>
+                
+               <div class="controlesVideoAudio">
+                    <input type="button" id="bAudioUno" value="&#9658;">
+                    <label>Audio 1 </label>&nbsp;&nbsp;
+                   
+                    <input type="button" id="bAudioDos" value="&#9658;">
+                    <label>Audio 2 </label>&nbsp;&nbsp;
+                   
+                    <input type="button" id="bAudioTres" value="&#9658;">
+                    <label>Audio 3 </label>&nbsp;&nbsp;
+
+                    <input type="button" id="bAudioCuatro" value="&#9658;">
+                    <label>Audio 4 </label>
+                </div>
+            </article>
+            <article>
+                <a id="controlVideo"></a>
+                <h2>Controles de video</h2>
+                <video id="medio" width="700" height="400">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+                    <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
+                  </video>
+
+                  <div class="controlesVideoAudio">
+                          <input type="button" id="reiniciar" value="reiniciar">
+                          <input type="button" id="retrasar" value="&laquo;">
+                          <input type="button" id="play" value="&#9658;">
+                          <input type="button" id="adelantar" value="&raquo;">
+                          <input type="button" id="silenciar" value="silenciar">
+                          <label>Volumen</label>
+                          <input type="button" id="menosVolumen" value="-">
+                          <input type="button" id="masVolumen" value="+">
+                  </div>
+                
+            </article>
+            <article>
+                <a id="Audios"></a>
+                <h2>Audios</h2>
+                <audio id="medioAudio" controls>
+                    <source src="./assets/audio/lionRoar.mp3" type='audio/mpeg; codecs="mp3"'>
+                    <source src="./assets/audio/lionRoar.ogg" type='audio/ogg; codecs="vorbis"' >
+               </audio>
+            </article>
+            <article>
+                <a id="Videos"></a>
+                <h2>Videos</h2>
+                <video id="medioVideo" width="700" height="350" controls>
+                    <source src="./assets/video/LionMp4.mp4" type="video/mp4">
+                    <source src="./assets/video/LionOgg.ogg" type='video/ogg; codecs="theora, vorbis"'/>
+               </video>
+            </article>
+            <article>
+                    <a id="T5"></a>
+                    <h2>Título 5</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique<sup>TM</sup> quae commodi aspernatur eum maiores reiciendis iusto esse quas, <q>doloribus est fuga dolore perspiciatis vitae in dicta</q>doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi <b>aspernatur eum maiores </b>reiciendis iusto esse quas, doloribus est fuga dolore <u>perspiciatis vitae in dicta</u>, corporis atque eveniet.</p>
+                    <p>descarga el texto <a href="texto.pdf">enlace a pdf</a></p>
+                    <br>
+                    <h2>Título</h2>
+                    <div class="auto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+            </article>
+            <article>
+                    <a id="Video"></a>
+                    <h2>Video</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1OtN-5lG8OE"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            <article>
+                    <a id="Mapa"></a>
+                    <h2>Mapa</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154214.5103364689!2d-0.5427351669515812!3d38.35795447718404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante+(Alacant)%2C+Alicante%2C+Espa%C3%B1a!5e1!3m2!1ses!2sus!4v1564299065614!5m2!1ses!2sus" width="600" height="450"  style="border:0" allowfullscreen></iframe>
+                    <br><br>
+            </article>
+            <article>
+                    <a id="T2"></a>
+                    <h2>Título 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique<sup>TM</sup> quae commodi aspernatur eum maiores reiciendis iusto esse quas, <q>doloribus est fuga dolore perspiciatis vitae in dicta</q>doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi <b>aspernatur eum maiores </b>reiciendis iusto esse quas, doloribus est fuga dolore <u>perspiciatis vitae in dicta</u>, corporis atque eveniet.</p>
+                    
+            </article>
+            <article>
+                   
+                    <a id="T1"></a>
+                    <h2>Título 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, doloribus est fuga dolore perspiciatis vitae in dicta, corporis atque eveniet. Fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae commodi aspernatur eum maiores reiciendis iusto esse quas, <cite>doloribus est fuga dolore perspiciatis vitae in dicta</cite>, corporis atque eveniet.</p>
+            </article>
+        </section>
+        <aside>
+            <div class="enlaces">
+                <h4>Archivos</h4>
+            <!-- <ul>
+                    <li><a href="#T1" tittle ="Enlace a entrada 1">Entrada 1</a></li>
+                    <li><a href="#T2" tittle ="Enlace a entrada 2">Entrada 2</a></li>
+                    <li><a href="#Mapa" tittle ="Enlace a entrada del mapa">Entrada Mapa</a></li>
+                    <li><a href="#Video" tittle ="Enlace a entrada de video">Entrada Video</a></li>
+                    <li><a href="#T5" tittle ="Enlace a entrada 5">Entrada 5</a></li>
+                    <li><a href="#Videos" tittle ="Enlace a entrada de videos">Videos</a></li>
+                    <li><a href="#Audios" tittle ="Enlace a entrada de audios">Audios</a></li>
+                    <li><a href="#controlVideo" tittle ="Enlace a entrada controles de video">Controles de video</a></li>
+                    <li><a href="#controlAudio" tittle ="Enlace a entrada controles de audio">Control de audio</a></li>
+                    <li><a href="#Animacion" tittle ="Enlace a entrada de animaciones">Animación</a></li>
+                    <li><a href="#dibujoCanvas" tittle ="Enlace a entrada de dibujo canvas">Dibujo Canvas</a></li>
+                    <li><a href="#juegoCanvas" tittle ="Enlace a entrada de juego canvas">Juego básico con Canvas</a></li>
+                    <li><a href="#eventosEfectosJq" tittle ="Enlace a entrada de eventos y efectos JQuerys">Eventos y efectos JQuerys</a></li>
+                    <li><a href="#EfectosJq" tittle ="Enlace a entrada de efectos JQuerys">Efectos JQuerys</a></li>
+                    <li><a href="#animate" tittle ="Enlace a entrada de método animate">Método animate</a></li>
+            
+                </ul> -->
+                
+                    <a href="#T1" tittle ="Enlace a entrada 1"><button id="bt1">Entrada 1</button></a>
+                    <a href="#T2" tittle ="Enlace a entrada 2"><button id="bt2">Entrada 2</button></a>
+                    <a href="#Mapa" tittle ="Enlace a entrada del mapa"> <button id="bt3">Entrada Mapa</button></a>
+                    <a href="#Video" tittle ="Enlace a entrada de video"> <button id="bt4">Entrada Video</button></a>
+                    <a href="#T5" tittle ="Enlace a entrada 5"> <button id="bt5">Entrada 5</button></a>
+                    <a href="#Videos" tittle ="Enlace a entrada de videos"><button id="bt6">Videos</button></a>
+                    <a href="#Audios" tittle ="Enlace a entrada de audios"> <button id="bt7">Audios</button></a>
+                    <a href="#controlVideo" tittle ="Enlace a entrada controles de video"><button id="bt8">Controles Video</button></a>
+                    <a href="#controlAudio" tittle ="Enlace a entrada controles de audio"><button id="bt9">Controles Audio</button></a>
+                    <a href="#Animacion" tittle ="Enlace a entrada de animaciones"><button id="bt10">Animación</button></a>
+                    <a href="#dibujoCanvas" tittle ="Enlace a entrada de dibujo canvas"><button id="bt11">Dibujo Canvas</button></a>
+                    <a href="#juegoCanvas" tittle ="Enlace a entrada de juego canvas"><button id="bt12">Juego con Canvas</button></a>
+                    <a href="#eventosEfectosJq" tittle ="Enlace a entrada de eventos y efectos JQuerys"><button id="bt13">Eventos y efectos JQuerys</button></a>
+                    <a href="#EfectosJq" tittle ="Enlace a entrada de efectos JQuerys"><button id="bt14">Efectos JQuerys</button></a>
+                    <a href="#animate" tittle ="Enlace a entrada de métodos animate"><button id="bt15">Método Animate</button></a>
+                </ul>
+            </div>
+            <div class="enlaces">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#" tittle ="Enlace a página web ejemplo uno">Enlace 1</a></li>
+                    <li><a href="#" tittle ="Enlace a página web ejemplo dos">Enlace 2</a></li>
+                </ul>
+            </div>
+        </aside>
+        <footer>
+            <hr>
+            <p><a href=""tittle ="Enlace a politica de privacidad y cookies" >Política de privacidad y cookies</a><p>
+            
+            <i class="fab fa-pinterest-p"></i>
+            <a target="_blank" href="https://twitter.com/" tittle ="Enlace de twitter"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.facebook.com" tittle ="Enlace a facebook"><i class="fab fa-facebook-f"></i></a>
+            
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" tittle ="Enlace a Creative Commons"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
+            </p>
+            
+            <p><small>© Nombre Empresa 2020</small></p>
+            <hr>
+        </footer>
+        <a id="btn-wa" target="_blank" href="https://api.whatsapp.com/send?phone=34645944702&text=¡Hola!" 
+        tittle ="Enviar un mensaje whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+        <a id="toTop" href="#"><i class="fas fa-chevron-up"></i></a>
+        </main>
+    </body>
+</html>

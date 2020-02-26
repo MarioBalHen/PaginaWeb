@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/print.css" media="print" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/mFavicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sitio">
+    <meta name="twitter:title" content="Título página">
+    <meta name="twitter:description" content="Descripción de la página">
+    <meta name="twitter:creator" content="@autor">
+    <meta name="twitter:image" content="http://www.ejemplo.com/image.jpg">
+
+    <!-- Open Graph data color: #BE1823;-->
+    <meta property="og:title" content="Título de la página" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.ejemplo.com/" />
+    <meta property="og:image" content="http://ejemplo.com/imagen.jpg" />
+    <meta property="og:description" content="Descripción de la página" />
+    <meta property="og:site_name" content="Nombre página web" />
+    <meta property="fb:admins" content="ID de Facebook" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="./assets/js/canvas.js"></script>
+    <script src="./assets/js/canvasJuego.js"></script>
+    <script src="./assets/js/controlesVideo.js"></script>
+    <script src="./assets/js/controlesAudio.js"></script>
+    <script src="./assets/js/contenidoInteracticoJq.js"></script>
+
+    <title>Contacto - Nombre Empresa</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="desktop">
+                <div class="logo">
+                    <a href="./index.html" tittle ="Enlace a inicio"><img src="./assets/img/logoBlack.png" alt="logo empresa"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html" tittle ="Enlace a inicio">Inicio</a></li>
+                    <li><a href="blog.html" tittle ="Enlace a blog">Blog</a></li>
+                    <li><a href="servicios.html" tittle ="Enlace a servicios">Servicios</a></li>
+                    <li><a href="contacto.html" tittle ="Enlace a contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="contactoSection">
+            <h1>CONTACTO</h1>
+            <article>
+            
+                <form method="post">
+                    <h2>Formulario de Contacto</h2>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" class = "control" name="nombre" type="text" required  pattern="[A-Za-z0-9]{1,30}" title="30 caracteres como máximo, sólo letras y números"/><br>
+                    <label for="email">Email</label>
+                    <input id="email" class = "control" name="email" type="email" required/>
+                    <label for="edad">Edad</label>
+                    <input id="edad" class = "control" name="edad" type="text"  required pattern="[18-99]{2}" title="Entre 18 y 99 años"/>
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" class = "control" name="telefono" type="text"  required />
+                    <label for="texto">Escribe aquí tu mensaje</label>
+                    <textarea id="texto" class = "control" name="textarea"  rows="7"></textarea>
+                    
+                    <input id="aceptacion" class="checkbox" type="checkbox" value="aceptacion" name="aceptacion">
+                    <label for = "aceptacion" class="checkbox">Aceptación de política de privacidad</label>
+                    <div>
+                        <input class="boton" type="submit" name = "enviar" value="Enviar formulario" />
+                    </div>
+                </form>
+                <hr>
+            </article>
+            <article>
+                <div class="contactoinfo-box">
+                    <h2>Contacto con la empresa</h2>
+                        <div id="flex-p">  
+                            <p class="big"><img src="./assets/images/Localizacion.png" alt =""><br>C/ Nombre Calle 00, Ciudad. Provincia</p>
+                            <p class="big"><img src="./assets/images/Telefono.png" alt = ""><br><a href="tel:+34645944702">645 944 702</a></p>
+                        <p class="big"><img src="./assets/images/email.png" alt = ""><br><a href="mailto:mariobalhen@gmail.com">mariobalhen@gmail.com</a></p>
+                    </div> 
+                </div>
+            </article>
+            
+        </section>
+        <footer>
+            <hr>
+            <p><a href="" tittle ="Enlace a politica de privacidad y cookies" >Política de privacidad y cookies</a><p>
+            
+            <i class="fab fa-pinterest-p"></i>
+            <a target="_blank" href="https://twitter.com/" tittle ="Enlace de twitter"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.facebook.com" tittle ="Enlace a facebook"><i class="fab fa-facebook-f"></i></a>
+            
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" tittle ="Enlace a Creative Commons"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
+            </p>
+            
+            <p><small>© Nombre Empresa 2020</small></p>
+            <hr>
+        </footer>
+
+        <a id="btn-wa" target="_blank" href="https://api.whatsapp.com/send?phone=34645944702&text=¡Hola!" 
+        tittle ="Enviar un mensaje whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+        <a id="toTop" href="#"><i class="fas fa-chevron-up"></i></a>
+        </main>
+    </body>
+</html>
